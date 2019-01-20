@@ -1,0 +1,122 @@
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#car{
+  width: 380px;
+  height: 300px;
+  margin-bottom: 200px;
+  animation: go 5s infinite linear;
+}
+
+.front{
+  background-color: #000;
+  position: relative;
+  top: 200px;
+  left:300px;
+  width: 80px;
+  height: 55px;
+  border-radius: 0px 30px 0px 0px;
+  margin-top: 45px;
+}
+
+.body{
+  background-color: #000;
+  position: relative;
+  top: 100px;
+  left:80px;
+  width: 220px;
+  height: 100px;
+  border-radius: 30px 30px 0px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.window1{
+  background-color: #fff;
+  width: 65px;
+  height: 35px;
+  margin-top: 10px;
+  border-radius: 10px 0 0 0;
+}
+
+.window2{
+  background-color: #fff;
+  width: 65px;
+  height: 35px;
+  margin-top: 10px;
+  border-radius: 0 10px 0 0;
+}
+
+.back{
+  background-color: #000;
+  position: absolute;
+  width: 80px;
+  height: 55px;
+  border-radius: 10px 0px 0px 0px;
+  margin-top: 45px;
+}
+
+.wheels{
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 70px;
+}
+
+.wheel1,
+.wheel2{
+  height: 100px;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  border: 7px solid #fff;
+  animation: round 1.5s infinite linear;
+}
+
+.wheel1{
+  margin-left: 55px;
+}
+
+.wheel2{
+  margin-right: 55px;
+}
+
+ h1{
+  text-align: center;
+  font-size: 60px;
+  align-self: flex-end;
+  margin: 0;
+ }
+
+/* move a car */
+ @keyframes go {
+
+  0%{
+    margin-left: 0%;
+  }
+
+  100%{
+    margin-left: 90%;
+  }
+
+ }
+/* rotate wheels */
+ @keyframes round {
+    0%{
+      transform: rotate(0deg);
+
+    }
+
+    100%{
+      transform: rotate(720deg);
+    }
+ }
